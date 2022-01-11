@@ -1,0 +1,342 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+    --light-cyan: #90d4c5;
+    --blue: #3dbeff;
+    --light-blue: #6ed0ff;
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: #fffbf8;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+p,
+ul{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+strong,
+button{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+body{
+    font-size: 18px;
+}
+/*header*/
+.header-section{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px 0;
+    background-color: var(--blue);
+}
+.header{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h-logo{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+}
+.span2{
+    color: var(--White);
+    font-size: 35px;
+    cursor: pointer;
+    visibility: hidden;
+}
+i.fas.fa-caret-left:before{
+    font-size: 100px;
+    color: var(--White);
+    position: absolute;
+    top: -45px;
+    right: 0.5px;
+    visibility: hidden;
+}
+.header-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-menu ul{
+    color: var(--White);
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.header-menu ul li{
+    margin: 0 20px;
+    cursor: pointer;
+}
+.header-menu button{
+    background-color: var(--White);
+    border: 1px solid var(--blue);
+    border-radius: 18px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.header-menu button:hover{
+    color: var(--White);
+    background-color: var(--light-blue);
+}
+/*main*/
+.main{
+    height: 656px;
+    background-image: url("images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 20px 0 0 0;
+}
+.main .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--White);
+}
+.text h1{
+    padding: 50px 0;
+    font-size: 55px;
+    letter-spacing: 10px;
+    font-weight: 900;
+}
+.text img{
+    width: 3%;
+    margin-top: 40px;
+}
+/*Transform*/
+.transform{
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--White);
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.b-text,
+.a-text{
+    width: 50%;
+    margin: 0 auto;
+}
+.text-1,
+.text-2{
+    width: 67%;
+    margin: 0 auto;
+}
+.text-1 h1,
+.text-2 h1{
+    font-size: 41px;
+    font-weight: 900;
+}
+.text-1 p,
+.text-2 p{
+    line-height: 22px;
+    color: var(--Very-dark-grayish-blue);
+    margin: 25px 0 40px 0;
+}
+.text-1 strong{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-bottom: 5px solid rgb(248, 243, 214);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.text-1 strong:hover{
+    border-bottom: 5px solid var(--Yellow);
+}
+.b-img,
+.a-img{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+.b-img img,
+.a-img img{
+    width: 100%;
+    margin: 0 auto;
+}
+/*stand*/
+.stand{
+    display: flex;
+    align-items: center;
+}
+.text-2 strong{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-bottom: 5px solid rgb(250, 223, 220);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.text-2 strong:hover{
+    border-bottom: 5px solid var(--Soft-red);
+}
+/*design*/
+.design{
+    width: 100%;
+    margin: 0 auto;
+}
+.photo{
+    display: flex;
+}
+.graphic{
+    background-image: url("images/desktop/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--Dark-desaturated-cyan);
+    width: 50%;
+    margin: 0 auto;
+}
+.g-text,
+.p-text{
+    width: 56%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 400px 0 30px 0;
+}
+.g-text h1,
+.p-text h1{
+    margin-bottom: 30px;
+}
+.photography{
+    background-image: url("images/desktop/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--Dark-blue);
+    width: 50%;
+    margin: 0 auto;
+}
+/*Clients*/
+.clients{
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: var(--White);
+    text-align: center;
+}
+.clients h1{
+    text-transform: uppercase;
+    color: var(--Dark-grayish-blue);
+    font-size: 18px;
+    letter-spacing: 7px;
+}
+.c-info{
+    display: flex;
+    align-items: center;
+    width: 83%;
+    margin: 50px auto 0 auto;
+}
+.emily,
+.thomas,
+.jennie{
+    width: 32%;
+    margin: 0 auto;
+}
+.emily img,
+.thomas img,
+.jennie img{
+    width: 22%;
+    border-radius: 100%;
+}
+.emily p,
+.thomas p,
+.jennie p{
+    font-size: 18px;
+    line-height: 29px;
+    width: 100%;
+    margin: 53px auto 72px auto;
+    color: var(--Very-dark-grayish-blue);
+}
+.emily span,
+.thomas span,
+.jennie span{
+    font-size: 16px;
+}
+.p p{
+    margin: 7px 0 0 0;
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+}
+/*images*/
+.images-section{
+    width: 100%;
+    margin: 0 auto;
+}
+.images{
+    display: flex;
+}
+.i-img{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+.i-img img{
+    width: 50%;
+    margin: 0 auto;
+}
+/*footer*/
+.footer{
+    background-color: var(--light-cyan);
+    color: var(--Dark-desaturated-cyan);
+    padding: 60px 0 20px 0;
+}
+.f-d{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-menu{
+    width: 20%;
+    margin: 30px 0;
+}
+.f-menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.f-menu ul li:hover{
+    cursor: pointer;
+    color: var(--White);
+}
+.f-social{
+    width: 10%;
+    margin: 30px 0;
+}
+.f-social ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.f-social ul li a i:hover{
+    cursor: pointer;
+    color: var(--White);
+}

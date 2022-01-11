@@ -1,0 +1,163 @@
+:root{
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+    --light-cyan: #90d4c5;
+    --blue: #3dbeff;
+    --light-blue: #6ed0ff;
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: #fffbf8;
+}
+@media only screen and (max-width: 375px){
+/*header*/
+    .header{
+        flex-direction: column;
+        position: relative;
+    }
+    .span2,
+    i.fas.fa-caret-left:before{
+        visibility: visible;
+    }
+    .span2:focus ~ .header-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+    .header-menu{
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--White);
+        width: 100%;
+        margin: 70px 0 0 0;
+        position: absolute;
+        z-index: 1;
+        display: none;
+    }
+    .header-menu a::before{
+        color: var(--White);
+        position: absolute;
+    }
+    .header-menu ul{
+        color: var(--Very-dark-grayish-blue);
+        list-style: none;
+        flex-direction: column;
+    }
+    .header-menu ul li{
+        margin: 20px 0;
+        cursor: pointer;
+    }
+    .header-menu button{
+        color: var(--Very-dark-desaturated-blue);
+        background-color: var(--Yellow);
+        border: 1px solid var(--Yellow);
+        margin: 20px auto;
+    }
+/*main*/
+    .main{
+        height: 427px;
+        text-align: center;
+    }
+    .text h1{
+        padding: 50px 0 18px 0;
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
+    .text img{
+        width: 8%;
+        margin-top: 16px;
+    }
+/*Tranform*/
+    .brand{
+        flex-direction: column-reverse;
+    }
+    .b-text,
+    .a-text{
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+    .text-1,
+    .text-2{
+        width: 87%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .text-1 h1,
+    .text-2 h1{
+        font-size: 40px;
+    }
+    .b-img,
+    .a-img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .b-img img,
+    .a-img img{
+        width: 100%;
+        margin: 0 auto;
+    }
+/*stand*/
+    .stand{
+        flex-direction: column;
+    }
+/*design*/
+    .photo{
+        flex-direction: column;
+    }
+    .graphic,
+    .photography{
+        width: 100%;
+    }
+    .g-text,
+    .p-text{
+        width: 100%;
+        margin: 0;
+        padding: 400px 20px 30px 20px;
+    }
+/*clients*/
+    .clients{
+        padding: 50px 0;
+    }
+    .clients h1{
+        letter-spacing: 3px;
+    }
+    .c-info{
+        display: flex;
+        flex-direction: column;
+        width: 76%;
+    }
+    .emily,
+    .thomas,
+    .jennie{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .emily p,
+    .thomas p,
+    .jennie p{
+        margin: 30px auto;
+    }
+    .p p{
+        margin: 3px 0 0 0;
+    }
+/*images*/
+    .images{
+        flex-direction: column;
+    }
+    .i-img{
+        width: 100%;
+        margin: 0 auto;
+    }
+/*footer*/
+    .f-menu{
+        width: 85%; 
+    }
+    .f-social{
+        width: 49%;
+    } 
+}
